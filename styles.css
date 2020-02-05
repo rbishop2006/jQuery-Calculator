@@ -8,4 +8,29 @@ html {
 }
 body {
   font-family: sans-serif;
+  width: 260px;
+  margin: auto;
+  margin-top: 50px;
+}
+.container {
+  background: lightseagreen;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  height: 250px;
+  padding: 20px;
+}
+.inputs {
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+::placeholder {
+  text-align: center;
+}
+.buttons {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
