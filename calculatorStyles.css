@@ -6,3 +6,102 @@ html {
 *::after {
   box-sizing: inherit;
 }
+body {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+.container {
+  display: grid;
+  margin: auto;
+  width: 285px;
+  height: 350px;
+  grid-template-areas:
+    "clear  inputs  inputs  inputs"
+    "seven  eight nine  divide"
+    "four five  six multiply"
+    "one  two three minus"
+    "zero decimal equals  plus";
+}
+#inputs {
+  padding: 0;
+  background-color: rgb(96, 170, 80);
+  border: none;
+  border: 1px solid rgb(31, 167, 1);
+  color: black;
+  font-size: 1.25em;
+  grid-area: inputs;
+  text-align: right;
+  padding-right: 25px;
+}
+#clear {
+  grid-area: clear;
+  width: 73px;
+}
+#seven {
+  grid-area: seven;
+}
+button:hover {
+  outline: none;
+  background-color: rgb(13, 196, 68);
+}
+input:focus {
+  outline: none;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#divide {
+  grid-area: divide;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#multiply {
+  grid-area: multiply;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#minus {
+  grid-area: minus;
+}
+#zero {
+  grid-area: zero;
+}
+#decimal {
+  grid-area: decimal;
+}
+#equals {
+  grid-area: equals;
+}
+#plus {
+  grid-area: plus;
+}
+.operators {
+  background-color: rgb(124, 185, 111);
+  border: 1px solid rgb(136, 214, 119);
+  outline: none;
+}
+.numerals {
+  background-color: rgb(96, 170, 80);
+  border: 1px solid rgb(136, 214, 119);
+  color: white;
+  font-size: 1.25em;
+  outline: none;
+}
